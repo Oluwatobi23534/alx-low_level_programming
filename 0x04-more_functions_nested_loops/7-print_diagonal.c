@@ -2,30 +2,32 @@
 #include "main.h"
 
 /**
-*print_square - prints squares
-*@size: parameter
+*print_diagonal - prints a diagonal
+*@n: parameter
 *Return: returns nothing
 */
 
-void print_square(int size)
+void print_diagonal(int n)
 {
-	int inc1, inc2;
+	int len, space;
 
-	if (size > 0)
+	if (n > 0)
 	{
-		for (inc1 = 0; inc1 < size; inc1++)
+		for (len = 0; len < n; len++)
 		{
-			for (inc2 = 0; inc2 < (size - 1); inc2++)
+			for (space = 0; space < len; space++)
 			{
-				putchar('#');
+				putchar(' ');
 			}
 
-			putchar('#');
+			putchar('\\');
+
+			if (len == (n - 1))
+			{
+				continue;
+			}
 			putchar('\n');
 		}
 	}
-	else
-	{
-		putchar('\n');
-	}
+	putchar('\n');
 }
