@@ -1,20 +1,3 @@
-
-yonasleykun27
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x17-doubly_linked_lists/6-sum_dlistint.c
-
-yonas all tasks
- 0 contributors
-29 lines (24 sloc)  392 Bytes
 #include "lists.h"
 
 /**
